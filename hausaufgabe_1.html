@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Kordinatensystem</title>
+    <script src="libraries/p5.min.js"></script> 
+
+  </head>
+
+  <body>
+<script>
+
+    function setup() {
+        createCanvas(windowWidth, windowHeight, WEBGL);
+    }
+
+    function draw() {
+
+   background(0);
+   rotateX(frameCount * 0.01);
+  // rotateY(frameCount * 0.01);
+   noStroke();
+   scale(4);
+      
+	
+push();	 
+translate(-50, 70); //change center axis for next shape
+ambientLight(128,128,128);
+specularMaterial(161,115,138);
+shininess(2);
+directionalLight(128, 128, 128, 1,0,0);
+sphere (100,24,5);//Y detail reduced	
+pop();	
+
+push();	 
+translate(70, 70); //change center axis for next shape
+ambientLight(128,128,128);
+specularMaterial(202,49,40);
+shininess(2);
+directionalLight(128, 128, 128, 1,0,0);
+sphere (50,24,5);//Y detail reduced	
+pop();	
+	
+push();	//silver
+translate(-60, 20); 
+ambientLight(128,128,128);
+specularMaterial(198,189,172);
+shininess(2);
+directionalLight(128, 128, 128, 0,-1,0);
+sphere (55,24,24);//Y detail reduced	
+pop();
+	
+//purple diamond
+push()
+translate(-70, -200); //change center axis for next shape
+ambientLight(128,128,128); //RGB all over light, best in mid ranges
+directionalLight(128, 128, 128, 1,0,0);
+specularMaterial(161,115,138); //RGB
+shininess(2); //Amount of shiny, 1=brightest reflection, 50=smallest
+sphere (30,24,2);	
+pop();
+
+//green sphere
+push()
+translate(-30, -50); //change center axis for next shape
+ambientLight(128,128,128); //RGB all over light, best in mid ranges
+directionalLight(1, 128, 128, 1,0,0);
+specularMaterial(64,126,46);
+shininess(1); //Amount of shiny, 1=brightest reflection, 50=smallest
+sphere (50);	
+pop();
+	
+push();	//purple 
+translate(50, -70); //change center axis for next shape
+ambientLight(128,128,128);
+specularMaterial(161,115,138);
+shininess(2);
+directionalLight(128, 128, 128, 1,0,0);
+sphere (80,24,5);//Y detail reduced	
+pop();	
+	
+push();	//
+translate(-100, -40); 
+ambientLight(128,128,128);
+specularMaterial(202,49,40);
+shininess(2);
+directionalLight(128, 128, 128, 1,0,0);
+sphere (35,24,3);//Y detail reduced	
+pop();
+	
+push()
+translate(20, 30); 
+ambientLight(128,128,128); 
+directionalLight(128, 128, 128, 1,0,0);
+specularMaterial(117,169,175); //RGB
+shininess(2); 
+sphere (30,24,2);	
+pop();
+	
+push();	//black
+translate(10, 120); 
+ambientLight(128,128,128);
+specularMaterial(0,0,0);
+shininess(2);
+directionalLight(128, 128, 128, -1,-1,-1);
+sphere (80,24,24);//Y detail reduced	
+pop();
+
+
+
+
+
+    }
+   
+
+
+</script>
+   
+  </body>
+
+</html>
